@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--success);
+  border-radius: 4px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.heading {
+  color: var(--success);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    gap: 1rem;
+  }
+}
+
+.page-link {
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.page-item.active .page-link {
+  background-color: var(--success);
+  border-color: var(--success);
+}
+
+.page-link:focus,
+.page-link:hover {
+  color: #fff;
+  background-color: var(--success);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+}
+
+@keyframes loading-skeleton {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loading-skeleton {
+  pointer-events: none;
+  animation: loading-skeleton 1s infinite alternate;
+}
+
+.loading-skeleton img {
+  filter: grayscale(100) contrast(0%) brightness(1.8);
+}
+
+.loading-skeleton h1,
+.loading-skeleton h2,
+.loading-skeleton h3,
+.loading-skeleton h4,
+.loading-skeleton h5,
+.loading-skeleton h6,
+.loading-skeleton p,
+.loading-skeleton li,
+.loading-skeleton .btn,
+.loading-skeleton label,
+.loading-skeleton .form-control {
+  color: transparent !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background-color: #eee !important;
+  border-color: #eee !important;
+}
+.loading-skeleton .form-control::placeholder {
+  color: transparent;
+}
