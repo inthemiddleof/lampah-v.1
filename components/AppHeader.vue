@@ -39,7 +39,7 @@
               </NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink
+           <!--    <NuxtLink
                 :class="`nav-link ${
                   this.$route.path.includes('/artikel') ? 'active' : ''
                 }`"
@@ -48,7 +48,7 @@
                 <b-icon-newspaper />
                 <span>Artikel</span>
               </NuxtLink>
-            </li>
+            </li> -->
           </ul>
           <ul class="navbar-nav ml-md-auto mt-3 mt-md-0">
             <template v-if="isAuthenticated">
